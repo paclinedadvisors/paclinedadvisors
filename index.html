@@ -69,6 +69,13 @@
   .project ul { margin: 0; padding-left: 20px; color: var(--ink); font-size: 16px; display: flex; flex-direction: column; gap: 4px; }
   .project .label { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 
+  .project.featured { grid-column: 1 / -1; background: var(--sky); border-color: #BFD6EC; display: grid; grid-template-columns: 1.15fr 1fr; gap: 12px 40px; align-items: start; }
+  .project.featured .main { display: flex; flex-direction: column; gap: 12px; }
+  .project.featured .gets { display: flex; flex-direction: column; gap: 12px; }
+  .project.featured h3 { font-size: 26px; }
+  .tag { align-self: flex-start; background: var(--navy); color: #fff; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+  @media (max-width: 760px) { .project.featured { grid-template-columns: 1fr; } }
+
   .how { background: var(--navy); color: #fff; }
   .how h2 { color: #fff; }
   .how .section-head p { color: var(--on-dark); }
@@ -147,6 +154,18 @@
         <p>Every program is different, but here are examples of clear, finishable projects with real deliverables.</p>
       </div>
       <div class="projects">
+        <article class="project featured">
+          <div class="main">
+            <span class="tag">Quick win</span>
+            <div class="when">When you want preceptors to feel valued</div>
+            <h3>AAPA Category 1 CME for your preceptors</h3>
+            <p>Every accredited PA program can offer its PA preceptors AAPA Category 1 CME for precepting, yet many programs never set it up. It&rsquo;s one of the most meaningful thank-yous you can give, and I&rsquo;ll handle the setup so your team doesn&rsquo;t have to figure it out.</p>
+          </div>
+          <div class="gets">
+            <div class="label">You get</div>
+            <ul><li>A completed AAPA application, ready to submit</li><li>Preceptor objectives, activity log, evaluation, and certificate templates</li><li>A simple process for tracking credits and annual reporting</li><li>A ready-to-send announcement letting preceptors know about the new benefit</li></ul>
+          </div>
+        </article>
         <article class="project">
           <div class="when">For a new or newly promoted DCE</div>
           <h3>A 90-day DCE launch plan</h3>
@@ -166,7 +185,7 @@
           <h3>Preceptor retention program</h3>
           <p>Retention beats recruiting. Build a program that makes preceptors feel valued and want to stay.</p>
           <div class="label">You get</div>
-          <ul><li>A preceptor CME and CPAAPA endorsement process</li><li>Adjunct appointment and recognition pathways</li><li>An ongoing, routine appreciation and communication calendar</li></ul>
+          <ul><li>A CPAAPA endorsement process</li><li>Adjunct appointment and recognition pathways</li><li>An ongoing, routine appreciation and communication calendar</li></ul>
         </article>
         <article class="project">
           <div class="when">During a vacancy or leave</div>
