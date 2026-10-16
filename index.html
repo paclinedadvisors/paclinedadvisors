@@ -81,7 +81,9 @@
   .bg { display: flex; flex-wrap: wrap; gap: 48px; }
   .bg-intro { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
   .bg-intro p { color: var(--muted); }
-  .bg-list { flex: 2 1 420px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px 28px; list-style: none; margin: 0; padding: 0; }
+  .bg-list { flex: 2 1 420px; min-width: 0; column-count: 2; column-gap: 28px; list-style: none; margin: 0; padding: 0; }
+  .bg-list li { break-inside: avoid; margin-bottom: 14px; }
+  @media (max-width: 600px) { .bg-list { column-count: 1; } }
   .bg-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 17px; }
   .bg-list svg { flex: none; margin-top: 4px; }
 
@@ -110,19 +112,19 @@
 <header>
   <div class="wrap">
     <a href="#top" aria-label="PA ClinEd Advisors home"><img src="logo.png" alt="PA ClinEd Advisors"></a>
-    <a class="btn btn-sm" href="#contact">Let&rsquo;s talk</a>
+    <a class="btn btn-sm" href="#contact">Contact</a>
   </div>
 </header>
 
 <main id="top">
   <section class="hero">
     <div class="wrap">
-      <div class="eyebrow">Consulting for PA program clinical teams</div>
-      <h1><span class="line">Support your DCE.</span> <span class="line">Strengthen your clinical year.</span></h1>
-      <p class="lead">Focused consulting and interim help from a PA educator with 15+ years in clinical education, for programs that need an extra set of experienced hands.</p>
+      <div class="eyebrow">Consulting for PA clinical education</div>
+      <h1><span class="line">Experienced support for</span> <span class="line">PA clinical education.</span></h1>
+      <p class="lead">Consulting and interim support for PA programs, provided by a PA educator with more than 15 years of clinical education leadership.</p>
       <div class="actions">
-        <a class="btn" href="#projects">See example projects</a>
-        <a class="btn btn-outline" href="#contact">Let&rsquo;s talk</a>
+        <a class="btn" href="#projects">View services</a>
+        <a class="btn btn-outline" href="#contact">Schedule a consultation</a>
       </div>
     </div>
   </section>
@@ -130,16 +132,16 @@
   <section class="block">
     <div class="wrap">
       <div class="section-head">
-        <h2>Sound familiar?</h2>
-        <p>Programs may reach out when something in the clinical year is stretched thin.</p>
+        <h2>When programs reach out</h2>
+        <p>Engagements typically begin when the clinical phase faces added demands.</p>
       </div>
       <ul class="signals">
-        <li>Your DCE is new, or you&rsquo;re about to lose one</li>
-        <li>A site visit or self-study is on the horizon</li>
-        <li>Preceptors are slipping away faster than you can replace them</li>
-        <li>You&rsquo;re growing: a bigger cohort or a new campus</li>
-        <li>Your clinical team is down a person or is a little less staffed than optimal</li>
-        <li>Good ideas keep stalling for lack of time from the clinical team</li>
+        <li>A new or departing Director of Clinical Education</li>
+        <li>An upcoming self-study or site visit</li>
+        <li>Preceptor attrition outpacing recruitment</li>
+        <li>Program growth, including a larger cohort or new campus</li>
+        <li>A vacancy or reduced staffing on the clinical team</li>
+        <li>Priority initiatives delayed by limited faculty time</li>
       </ul>
     </div>
   </section>
@@ -147,64 +149,64 @@
   <section class="block" id="projects" style="background:#FAFCFE">
     <div class="wrap">
       <div class="section-head">
-        <h2>What a project could look like</h2>
-        <p>Every program is different, but here are examples of clear, finishable projects with real deliverables.</p>
+        <h2>Services</h2>
+        <p>Representative engagements, each scoped to defined goals and deliverables.</p>
       </div>
       <div class="projects">
         <article class="project">
           <div class="when">For a new DCE or new clinical faculty</div>
           <h3>A 90-day DCE launch plan</h3>
-          <p>Weekly coaching plus the documents and systems approach nobody hands a new DCE, so your clinical year doesn&rsquo;t depend on what one person remembers.</p>
-          <div class="label">You get</div>
+          <p>Structured coaching, documentation, and systems that establish a sustainable clinical year that does not depend on any one individual.</p>
+          <div class="label">Deliverables</div>
           <ul><li>A month-by-month clinical-year calendar</li><li>A playbook of recurring tasks and deadlines</li><li>Templates for common student and preceptor issues</li></ul>
         </article>
         <article class="project">
           <div class="when">Before a self-study or site visit</div>
           <h3>Clinical-phase accreditation check</h3>
           <p>A close look at your clinical-year processes against the ARC-PA Standards, so gaps are fixed before they become observations.</p>
-          <div class="label">You get</div>
+          <div class="label">Deliverables</div>
           <ul><li>A B3 standards crosswalk with evidence locations</li><li>A prioritized gap list with fixes</li><li>Clear, consistent clinical-phase data for the portal</li><li>Clinical syllabi organized and aligned with the standards</li></ul>
         </article>
         <article class="project">
           <div class="when">Before your next clinical year starts</div>
           <h3>Category 1 CME for your preceptors</h3>
-          <p>Every accredited PA program can offer its PA preceptors AAPA Category 1 CME for precepting, yet many never set it up. I&rsquo;ll handle the setup so your preceptors get this meaningful thank-you.</p>
-          <div class="label">You get</div>
+          <p>Accredited PA programs may offer AAPA Category 1 CME to their PA preceptors, yet many have not established this benefit. I manage the process from application through implementation.</p>
+          <div class="label">Deliverables</div>
           <ul><li>An approved AAPA application</li><li>Objectives, activity log, evaluation, and certificate templates</li><li>A simple process for tracking credits and annual reporting</li></ul>
         </article>
         <article class="project">
           <div class="when">When preceptors keep leaving</div>
           <h3>Preceptor retention program</h3>
-          <p>Retention beats recruiting. Build a program that makes preceptors feel valued and want to stay.</p>
-          <div class="label">You get</div>
+          <p>A structured program that recognizes preceptors and supports long-term retention of clinical sites.</p>
+          <div class="label">Deliverables</div>
           <ul><li>A CPAAPA endorsement process</li><li>Adjunct appointment and recognition pathways</li><li>An ongoing, routine appreciation and communication calendar</li></ul>
         </article>
         <article class="project">
           <div class="when">During a vacancy or leave</div>
           <h3>Interim clinical support</h3>
-          <p>Steady, experienced coverage of clinical-year duties while you hire, so students and preceptors barely notice the transition.</p>
-          <div class="label">You get</div>
+          <p>Experienced coverage of clinical-year responsibilities during a search, ensuring continuity for students and preceptors.</p>
+          <div class="label">Deliverables</div>
           <ul><li>Rotation scheduling and placement follow-through</li><li>Preceptor communication and student check-ins</li><li>A clean handoff to your new hire</li></ul>
         </article>
         <article class="project">
           <div class="when">When you&rsquo;re growing</div>
           <h3>Clinical capacity plan</h3>
-          <p>Map exactly how many sites and preceptors a larger cohort or new campus needs, where to find them, and by when.</p>
-          <div class="label">You get</div>
-          <ul><li>A capacity model by rotation and term</li><li>A site development timeline</li><li>Options for hubs and shared placement planning</li></ul>
+          <p>An assessment of the sites and preceptors required for a larger cohort or new campus, where to develop them, and on what timeline.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>A capacity model by rotation, term, and cohort</li><li>A site development strategy and timeline</li><li>Options for distant clinical hubs and shared placement planning</li></ul>
         </article>
         <article class="project">
           <div class="when">When the team is overwhelmed</div>
           <h3>Clinical workflow tune-up</h3>
-          <p>A fresh look at how your clinical team spends its time, then simpler processes that give hours back every week.</p>
-          <div class="label">You get</div>
+          <p>A review of how the clinical team allocates its time, followed by streamlined processes that return hours each week.</p>
+          <div class="label">Deliverables</div>
           <ul><li>A map of current workflows and bottlenecks</li><li>Streamlined processes and templates</li><li>A short implementation plan your team can own</li></ul>
         </article>
         <article class="project">
           <div class="when">When a student needs extra support</div>
           <h3>Academic and professionalism remediation</h3>
           <p>Connect students who have academic or professionalism concerns with structured, supportive coaching and remediation, working alongside your faculty and following your program&rsquo;s policies.</p>
-          <div class="label">You get</div>
+          <div class="label">Deliverables</div>
           <ul><li>An individualized remediation plan with clear goals and timelines</li><li>Regular coaching sessions with progress documentation</li><li>Timely communication with program faculty, consistent with your policies</li></ul>
         </article>
       </div>
@@ -214,14 +216,15 @@
   <section class="block how">
     <div class="wrap">
       <div class="section-head">
-        <h2>How it works</h2>
-        <p>Simple, flexible engagements built around your academic calendar.</p>
+        <h2>Engagement process</h2>
+        <p>Flexible engagements aligned with your academic calendar.</p>
       </div>
       <div class="terms">
-        <div class="term"><h3>Start with a call</h3><p>A free conversation to understand your needs and see if I&rsquo;m a good fit.</p></div>
-        <div class="term"><h3>Agree on scope</h3><p>Clear goals, deliverables, and a timeline in writing before work begins.</p></div>
-        <div class="term"><h3>About one semester</h3><p>Most projects run 12&ndash;15 weeks, long enough to finish real work.</p></div>
-        <div class="term"><h3>Mostly virtual</h3><p>We meet by Zoom, Teams, or phone, with on-site visits available when needed.</p></div>
+        <div class="term"><h3>Initial consultation</h3><p>A complimentary conversation to assess your program&rsquo;s needs and fit.</p></div>
+        <div class="term"><h3>Defined scope</h3><p>Goals, deliverables, and timeline agreed upon in writing before work begins.</p></div>
+        <div class="term"><h3>Flexible duration</h3><p>Engagements may be brief or extended, from a single project to an ongoing partnership, and can be adjusted as needs evolve.</p></div>
+        <div class="term"><h3>Virtual or on site</h3><p>We connect by Zoom, Teams, or phone, or on site when that best serves the work.</p></div>
+      </div>
       </div>
     </div>
   </section>
@@ -230,8 +233,8 @@
     <div class="wrap">
       <div class="bg">
         <div class="bg-intro">
-          <h2>My background</h2>
-          <p>I&rsquo;ve been a PA educator since 2009, mostly in the clinical phase, and I&rsquo;m passionate about supporting the people who keep the clinical phase running.</p>
+          <h2>Experience</h2>
+          <p>Paul Bradford, MEd, MMS, PA-C, has served as a PA educator since 2009, with a focus on the clinical phase and on supporting the faculty and staff who sustain it.</p>
         </div>
         <ul class="bg-list">
           <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Director of clinical education and associate program director roles</li>
@@ -249,13 +252,13 @@
 
   <section class="cta" id="contact">
     <div class="wrap">
-      <h2>Let&rsquo;s talk</h2>
-      <p>If I may be able to help, let&rsquo;s set up a quick call. We&rsquo;ll see if I&rsquo;m a good fit and talk through scope, timeline, and deliverables.</p>
+      <h2>Contact</h2>
+      <p>To discuss your program&rsquo;s needs, please reach out to schedule a complimentary consultation regarding scope, timeline, and deliverables.</p>
       <div class="contact">
         <a class="btn" href="mailto:paul@paclinedadvisors.com">Email paul@paclinedadvisors.com</a>
-        <a class="btn btn-outline" href="sms:+12158062477">Call or text 215-806-2477</a>
+        <a class="btn btn-outline" href="sms:+12158062477">Call 215-806-2477</a>
       </div>
-      <p class="plain-contact">Or copy: <span>paul@paclinedadvisors.com</span> &middot; <span>215-806-2477</span></p>
+      <p class="plain-contact"> <span>paul@paclinedadvisors.com</span> &middot; <span>215-806-2477</span></p>
     </div>
   </section>
 </main>
