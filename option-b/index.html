@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PA ClinEd Advisors | Expert support for PA clinical education teams</title>
+<meta name="description" content="Interim support and consulting for PA program clinical teams: DCE onboarding, ARC-PA clinical-phase readiness, operational improvement, and preceptor retention.">
+<meta property="og:title" content="PA ClinEd Advisors">
+<meta property="og:description" content="Support your DCE. Strengthen your clinical year.">
+<meta property="og:url" content="https://paclinedadvisors.com/">
+<meta property="og:image" content="https://paclinedadvisors.com/logo.png">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0C3A72;
+    --navy-dark: #082a54;
+    --blue: #1079CB;
+    --sky: #EAF3FB;
+    --ink: #13233A;
+    --muted: #4B5B70;
+    --line: #D6E2EE;
+    --on-dark: #C7D8EC;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: "Source Sans 3", system-ui, sans-serif; font-size: 18px; line-height: 1.6; color: var(--ink); background: #fff; }
+  h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; color: var(--navy); margin: 0; }
+  p { margin: 0; }
+  a { color: var(--blue); }
+  a:hover { color: var(--navy); }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .narrow { max-width: 780px; }
+  .btn { display: inline-block; padding: 14px 26px; border-radius: 8px; font-weight: 600; font-size: 17px; text-decoration: none; text-align: center; background: var(--navy); color: #fff; border: 2px solid var(--navy); transition: background .15s, border-color .15s; }
+  .btn:hover { background: var(--navy-dark); border-color: var(--navy-dark); color: #fff; }
+  .btn-outline { background: transparent; color: var(--navy); }
+  .btn-outline:hover { background: var(--navy); color: #fff; }
+  .btn-sm { padding: 9px 18px; font-size: 15px; }
+  .btn:focus-visible { outline: 3px solid #F2A541; outline-offset: 3px; }
+
+
+  header { border-bottom: 1px solid var(--line); background: #fff; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+  header img { height: 46px; width: auto; display: block; }
+
+  .hero { background: linear-gradient(180deg, var(--sky), #fff); }
+  .hero .wrap { padding-top: 80px; padding-bottom: 80px; display: flex; flex-direction: column; gap: 22px; }
+  .eyebrow { font-weight: 600; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); }
+  .hero h1 { font-size: clamp(2.2rem, 5vw, 3.3rem); line-height: 1.1; letter-spacing: -.01em; }
+  .hero h1 .line { display: block; text-wrap: balance; }
+  .lead { font-size: 21px; color: var(--muted); max-width: 680px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 14px; padding-top: 6px; }
+
+  section.block .wrap { padding-top: 84px; padding-bottom: 84px; display: flex; flex-direction: column; gap: 36px; }
+  .section-head { display: flex; flex-direction: column; gap: 10px; max-width: 720px; }
+  h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); line-height: 1.15; }
+  .section-head p { color: var(--muted); }
+
+  .signals { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; list-style: none; margin: 0; padding: 0; }
+  .signals li { background: var(--sky); border-radius: 12px; padding: 20px 22px; font-weight: 600; color: var(--navy); }
+
+  .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+  .project { border: 1px solid var(--line); border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 12px; background: #fff; }
+  .project h3 { font-size: 22px; line-height: 1.25; }
+  .project .when { font-size: 15px; font-weight: 600; color: var(--blue); }
+  .project p { color: var(--muted); font-size: 17px; }
+  .project ul { margin: 0; padding-left: 20px; color: var(--ink); font-size: 16px; display: flex; flex-direction: column; gap: 4px; }
+  .project .label { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+  .how { background: var(--navy); color: #fff; }
+  .how h2 { color: #fff; }
+  .how .section-head p { color: var(--on-dark); }
+  .terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; }
+  .term { border-top: 2px solid var(--blue); padding-top: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .term h3 { color: #fff; font-size: 20px; }
+  .term p { color: var(--on-dark); font-size: 17px; }
+
+  .bg { display: flex; flex-wrap: wrap; gap: 48px; }
+  .bg-intro { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+  .bg-intro p { color: var(--muted); }
+  .bg-list { flex: 2 1 420px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px 28px; list-style: none; margin: 0; padding: 0; }
+  .bg-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 17px; }
+  .bg-list svg { flex: none; margin-top: 4px; }
+
+  .cta { background: var(--sky); }
+  .cta .wrap { padding-top: 84px; padding-bottom: 84px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+  .cta p { color: var(--muted); max-width: 620px; }
+  .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+
+  .plain-contact { font-size: 16px; }
+  .plain-contact span { color: var(--ink); user-select: all; white-space: nowrap; }
+
+  footer { border-top: 1px solid var(--line); }
+  footer .wrap { padding-top: 32px; padding-bottom: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 15px; color: var(--muted); }
+
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    header img { height: 36px; }
+    .hero .wrap { padding-top: 56px; padding-bottom: 56px; }
+    section.block .wrap, .cta .wrap { padding-top: 60px; padding-bottom: 60px; }
+    .actions .btn, .contact .btn { flex: 1 1 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#top" aria-label="PA ClinEd Advisors home"><img src="../logo.png" alt="PA ClinEd Advisors"></a>
+    <a class="btn btn-sm" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Consulting for PA clinical education</div>
+      <h1><span class="line">Experienced support for</span> <span class="line">PA clinical education.</span></h1>
+      <p class="lead">Consulting and interim support for PA programs, provided by a PA educator with more than 15 years of clinical education leadership.</p>
+      <div class="actions">
+        <a class="btn" href="#projects">View services</a>
+        <a class="btn btn-outline" href="#contact">Schedule a consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>When programs reach out</h2>
+        <p>Engagements typically begin when the clinical phase faces added demands.</p>
+      </div>
+      <ul class="signals">
+        <li>A new or departing Director of Clinical Education</li>
+        <li>An upcoming self-study or site visit</li>
+        <li>Preceptor attrition outpacing recruitment</li>
+        <li>Program growth, including a larger cohort or new campus</li>
+        <li>A vacancy or reduced staffing on the clinical team</li>
+        <li>Priority initiatives delayed by limited faculty time</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="projects" style="background:#FAFCFE">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Representative engagements, each scoped to defined goals and deliverables.</p>
+      </div>
+      <div class="projects">
+        <article class="project">
+          <div class="when">For a new DCE or new clinical faculty</div>
+          <h3>A 90-day DCE launch plan</h3>
+          <p>Structured coaching, documentation, and systems that establish a sustainable clinical year that does not depend on any one individual.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>A month-by-month clinical-year calendar</li><li>A playbook of recurring tasks and deadlines</li><li>Templates for common student and preceptor issues</li></ul>
+        </article>
+        <article class="project">
+          <div class="when">Before a self-study or site visit</div>
+          <h3>Clinical-phase accreditation check</h3>
+          <p>A close look at your clinical-year processes against the ARC-PA Standards, so gaps are fixed before they become observations.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>A B3 standards crosswalk with evidence locations</li><li>A prioritized gap list with fixes</li><li>Clear, consistent clinical-phase data for the portal</li><li>Clinical syllabi organized and aligned with the standards</li></ul>
+        </article>
+        <article class="project">
+          <div class="when">Before your next clinical year starts</div>
+          <h3>Category 1 CME for your preceptors</h3>
+          <p>Accredited PA programs may offer AAPA Category 1 CME to their PA preceptors, yet many have not established this benefit. I manage the process from application through implementation.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>An approved AAPA application</li><li>Objectives, activity log, evaluation, and certificate templates</li><li>A simple process for tracking credits and annual reporting</li></ul>
+        </article>
+        <article class="project">
+          <div class="when">When preceptors keep leaving</div>
+          <h3>Preceptor retention program</h3>
+          <p>A structured program that recognizes preceptors and supports long-term retention of clinical sites.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>A CPAAPA endorsement process</li><li>Adjunct appointment and recognition pathways</li><li>An ongoing, routine appreciation and communication calendar</li></ul>
+        </article>
+        <article class="project">
+          <div class="when">During a vacancy or leave</div>
+          <h3>Interim clinical support</h3>
+          <p>Experienced coverage of clinical-year responsibilities during a search, ensuring continuity for students and preceptors.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>Rotation scheduling and placement follow-through</li><li>Preceptor communication and student check-ins</li><li>A clean handoff to your new hire</li></ul>
+        </article>
+        <article class="project">
+          <div class="when">When you&rsquo;re growing</div>
+          <h3>Clinical capacity plan</h3>
+          <p>An assessment of the sites and preceptors required for a larger cohort or new campus, where to develop them, and on what timeline.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>A capacity model by rotation and term</li><li>A site development timeline</li><li>Options for hubs and shared placement planning</li></ul>
+        </article>
+        <article class="project">
+          <div class="when">When the team is overwhelmed</div>
+          <h3>Clinical workflow tune-up</h3>
+          <p>A review of how the clinical team allocates its time, followed by streamlined processes that return hours each week.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>A map of current workflows and bottlenecks</li><li>Streamlined processes and templates</li><li>A short implementation plan your team can own</li></ul>
+        </article>
+        <article class="project">
+          <div class="when">When a student needs extra support</div>
+          <h3>Academic and professionalism remediation</h3>
+          <p>Connect students who have academic or professionalism concerns with structured, supportive coaching and remediation, working alongside your faculty and following your program&rsquo;s policies.</p>
+          <div class="label">Deliverables</div>
+          <ul><li>An individualized remediation plan with clear goals and timelines</li><li>Regular coaching sessions with progress documentation</li><li>Timely communication with program faculty, consistent with your policies</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Engagement process</h2>
+        <p>Flexible engagements aligned with your academic calendar.</p>
+      </div>
+      <div class="terms">
+        <div class="term"><h3>Initial consultation</h3><p>A complimentary conversation to assess your program&rsquo;s needs and fit.</p></div>
+        <div class="term"><h3>Defined scope</h3><p>Goals, deliverables, and timeline agreed upon in writing before work begins.</p></div>
+        <div class="term"><h3>Semester-length</h3><p>Most engagements are completed within 12&ndash;15 weeks.</p></div>
+        <div class="term"><h3>Primarily virtual</h3><p>Meetings by Zoom, Teams, or phone, with on-site visits as needed.</p></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="bg">
+        <div class="bg-intro">
+          <h2>Experience</h2>
+          <p>Paul Bradford, MEd, MMS, PA-C, has served as a PA educator since 2009, with a focus on the clinical phase and on supporting the faculty and staff who sustain it.</p>
+        </div>
+        <ul class="bg-list">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Director of clinical education and associate program director roles</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>5 ARC-PA applications and site visits, provisional through continued</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Founding DCE of a new PA program</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Expansion to a second campus and distant clinical hubs</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Clinical placement in a region shared with eight other PA programs</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>PAEA Clinical Coordinators 101 facilitator and national presenter</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Faculty affairs experience with promotion from assistant to full professor with tenure</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1079CB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Peer-reviewed publications on PA clinical education</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>To discuss your program&rsquo;s needs, please reach out to schedule a complimentary consultation regarding scope, timeline, and deliverables.</p>
+      <div class="contact">
+        <a class="btn" href="mailto:paul@paclinedadvisors.com">Email paul@paclinedadvisors.com</a>
+        <a class="btn btn-outline" href="sms:+12158062477">Call 215-806-2477</a>
+      </div>
+      <p class="plain-contact"> <span>paul@paclinedadvisors.com</span> &middot; <span>215-806-2477</span></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>PA ClinEd Advisors &middot; Expert support for PA clinical education teams</div>
+    <div>&copy; 2026 PA ClinEd Advisors</div>
+  </div>
+</footer>
+
+</body>
+</html>
